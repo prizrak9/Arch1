@@ -5,9 +5,9 @@ using System.Reflection;
 namespace Arch1
 {
 
-    enum Form { Simple, Full }
+    public enum Form { Simple, Full }
 
-    class Complex : ComplexBase, IComplex
+    public class Complex : ComplexBase
     {
         public (double real, double imaginary) ComplexForm => (real, imaginary);
 
@@ -47,7 +47,7 @@ namespace Arch1
         [My]
         public string ToComplexForm()
         {
-            return $"z={real}+{imaginary}i";
+            return $"z={real}{(imaginary < 0 ? "" : "+")}{imaginary}i";
         }
 
         [My]

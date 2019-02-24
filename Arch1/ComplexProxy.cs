@@ -5,7 +5,7 @@ using System.Dynamic;
 
 namespace Arch1
 {
-    class ComplexProxy : DynamicObject
+    public class ComplexProxy : DynamicObject
     {
         private readonly Complex origin;
         

@@ -1,6 +1,6 @@
 ﻿namespace Arch1
 {
-    abstract class ComplexBase
+    public abstract class ComplexBase
     {
         protected readonly double real;
         protected readonly double imaginary;
